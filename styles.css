@@ -2050,8 +2050,11 @@ body.nav-open .menu-toggle span:last-child {
     gap: 8px;
 }
 
+/* Botão centralizado em relação ao texto da coluna */
 .faq-grid .section-head .btn-wa {
-    margin-top: 24px;
+    display: flex;
+    width: fit-content;
+    margin: 24px auto 0;
 }
 
 .faq-list {
