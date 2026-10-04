@@ -2905,9 +2905,11 @@ body.nav-open .menu-toggle span:last-child {
         align-items: start;
     }
 
+    /* Painel centralizado na altura em relação às perguntas */
     .faq-grid .section-head {
         position: sticky;
         top: calc(var(--header-h) + 40px);
+        align-self: center;
     }
 
     .final-cta {
