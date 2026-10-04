@@ -2047,22 +2047,97 @@ body.nav-open .menu-toggle span:last-child {
    -------------------------------------------------------------------------- */
 .faq-grid {
     display: grid;
-    gap: 8px;
+    gap: 28px;
 }
 
-/* Botão centralizado em relação ao texto da coluna */
-.faq-grid .section-head .btn-wa {
+/* Painel escuro com a foto da recepção ao fundo */
+.faq-panel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    max-width: none;
+    margin-bottom: 0;
+    padding: clamp(32px, 6vw, 48px) clamp(24px, 5vw, 42px);
+    border-radius: 28px;
+    background: var(--verde-noite) url("assets/estrutura/recepcao-01.webp") center / cover;
+    color: var(--branco);
+    box-shadow: var(--shadow);
+}
+
+.faq-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, rgba(47, 50, 41, .93) 30%, rgba(47, 50, 41, .8));
+}
+
+.faq-panel h2 {
+    color: var(--branco);
+}
+
+.faq-panel h2 em {
+    color: var(--creme);
+}
+
+.faq-panel .section-sub {
+    color: rgba(242, 240, 234, .82);
+}
+
+/* Botão centralizado em relação ao texto do painel */
+.faq-panel .btn-wa {
     display: flex;
     width: fit-content;
-    margin: 24px auto 0;
+    margin: 28px auto 0;
 }
 
+.faq-info {
+    display: grid;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 22px 0 0;
+    border-top: 1px solid rgba(242, 240, 234, .16);
+    list-style: none;
+    font-size: .88rem;
+    line-height: 1.45;
+    color: rgba(242, 240, 234, .8);
+}
+
+.faq-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.faq-info .icon {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    color: var(--oliva-claro);
+}
+
+/* Perguntas em cartões numerados */
 .faq-list {
-    border-top: 1px solid var(--linha);
+    display: grid;
+    gap: 12px;
 }
 
 .faq-item {
-    border-bottom: 1px solid var(--linha);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius);
+    background: var(--papel);
+    transition: border-color .3s, box-shadow .35s var(--ease), background-color .3s;
+}
+
+.faq-item:hover {
+    border-color: rgba(131, 131, 108, .45);
+}
+
+.faq-item.open {
+    border-color: rgba(131, 131, 108, .55);
+    background: #fff;
+    box-shadow: var(--shadow-sm);
 }
 
 .faq-item h3 {
@@ -2073,27 +2148,43 @@ body.nav-open .menu-toggle span:last-child {
 .faq-item button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
     width: 100%;
-    padding: 22px 2px;
+    padding: 20px 20px 20px 22px;
     border: 0;
     background: none;
     text-align: left;
-    font-size: 1.06rem;
+    font-size: 1.04rem;
     font-weight: 600;
     line-height: 1.4;
     color: var(--verde);
+    cursor: pointer;
+}
+
+.faq-num {
+    flex: none;
+    min-width: 2ch;
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--oliva);
+}
+
+.faq-q {
+    flex: 1;
 }
 
 .faq-item button .icon {
+    flex: none;
     width: 34px;
     height: 34px;
     padding: 8px;
     border-radius: 50%;
     border: 1px solid var(--linha);
     color: var(--oliva);
-    transition: transform .4s var(--ease), background-color .3s, color .3s;
+    transition: transform .4s var(--ease), background-color .3s, color .3s, border-color .3s;
 }
 
 .faq-item.open button .icon {
@@ -2113,13 +2204,26 @@ body.nav-open .menu-toggle span:last-child {
     overflow: hidden;
 }
 
+/* A resposta começa alinhada ao texto da pergunta, depois do número */
 .faq-answer p {
-    padding: 0 48px 24px 2px;
+    padding: 0 26px 22px calc(22px + 2.6ch + 16px);
     color: var(--texto-suave);
 }
 
 .faq-item.open .faq-answer {
     grid-template-rows: 1fr;
+}
+
+@media (max-width: 480px) {
+    .faq-item button {
+        gap: 12px;
+        padding: 18px 16px;
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        padding: 0 18px 20px 16px;
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -2797,7 +2901,7 @@ body.nav-open .menu-toggle span:last-child {
     /* FAQ */
     .faq-grid {
         grid-template-columns: 1fr 1.5fr;
-        gap: 80px;
+        gap: 64px;
         align-items: start;
     }
 
