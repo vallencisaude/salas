@@ -2050,7 +2050,7 @@ body.nav-open .menu-toggle span:last-child {
     gap: 28px;
 }
 
-/* Painel escuro com a foto da recepção ao fundo */
+/* Painel claro, em creme, com o símbolo da marca discreto no canto */
 .faq-panel {
     position: relative;
     isolation: isolate;
@@ -2058,30 +2058,26 @@ body.nav-open .menu-toggle span:last-child {
     max-width: none;
     margin-bottom: 0;
     padding: clamp(32px, 6vw, 48px) clamp(24px, 5vw, 42px);
+    border: 1px solid rgba(131, 131, 108, .28);
     border-radius: 28px;
-    background: var(--verde-noite) url("assets/estrutura/recepcao-01.webp") center / cover;
-    color: var(--branco);
+    background: linear-gradient(160deg, #fbf9f4 0%, var(--creme) 100%);
     box-shadow: var(--shadow);
 }
 
 .faq-panel::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: -34px;
+    right: -40px;
     z-index: -1;
-    background: linear-gradient(160deg, rgba(47, 50, 41, .93) 30%, rgba(47, 50, 41, .8));
-}
-
-.faq-panel h2 {
-    color: var(--branco);
+    width: 190px;
+    aspect-ratio: 320 / 378;
+    background: url("assets/marca/simbolo-oliva.webp") center / contain no-repeat;
+    opacity: .12;
 }
 
 .faq-panel h2 em {
-    color: var(--creme);
-}
-
-.faq-panel .section-sub {
-    color: rgba(242, 240, 234, .82);
+    color: var(--oliva-escuro);
 }
 
 /* Botão centralizado em relação ao texto do painel */
@@ -2096,11 +2092,11 @@ body.nav-open .menu-toggle span:last-child {
     gap: 12px;
     margin-top: 30px;
     padding: 22px 0 0;
-    border-top: 1px solid rgba(242, 240, 234, .16);
+    border-top: 1px solid rgba(131, 131, 108, .3);
     list-style: none;
     font-size: .88rem;
     line-height: 1.45;
-    color: rgba(242, 240, 234, .8);
+    color: var(--texto-suave);
 }
 
 .faq-info li {
@@ -2114,7 +2110,7 @@ body.nav-open .menu-toggle span:last-child {
     width: 18px;
     height: 18px;
     margin-top: 1px;
-    color: var(--oliva-claro);
+    color: var(--oliva);
 }
 
 /* Perguntas em cartões numerados */
@@ -2215,6 +2211,12 @@ body.nav-open .menu-toggle span:last-child {
 }
 
 @media (max-width: 480px) {
+    .faq-panel::before {
+        top: -22px;
+        right: -30px;
+        width: 120px;
+    }
+
     .faq-item button {
         gap: 12px;
         padding: 18px 16px;
