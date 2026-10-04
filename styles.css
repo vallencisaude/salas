@@ -2037,8 +2037,9 @@ body.nav-open .menu-toggle span:last-child {
     height: 17px;
 }
 
+/* No celular as setas ficam sobre a foto, acima da etiqueta com nome e especialidade */
 .carousel-cards .carousel-btn {
-    top: 42%;
+    top: 30%;
 }
 
 /* --------------------------------------------------------------------------
@@ -2767,6 +2768,10 @@ body.nav-open .menu-toggle span:last-child {
     /* Profissionais */
     .carousel-cards .carousel-slide {
         flex-basis: calc((100% - var(--carousel-gap) * 2) / 3);
+    }
+
+    .carousel-cards .carousel-btn {
+        top: 42%;
     }
 
     .carousel-cards .carousel-btn.prev {

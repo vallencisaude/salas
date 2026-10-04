@@ -216,11 +216,9 @@ Enquanto o vídeo não chega, o espaço mostra uma foto da recepção. Para ativ
 - [x] Domínio oficial `vallencisaude.com.br/salas` com HTTPS
 - [ ] Novas fotos da clínica (seção Nossa Estrutura)
 - [ ] Vídeo vertical de apresentação da clínica (seção Nossa Estrutura)
-- [x] Fotos e depoimentos de Ivone, Camila, Thiago, Lua Clara, Ercivan e Vitória (documento "PROFISSIONAIS PARA O SITE", 28/09)
-- [ ] Depoimento da Anna Waleska
-- [x] Fotos de Daniela Gama, Luíza Dantas e Kelly Roberta (faltam especialidade e depoimento; da Kelly, também a modalidade)
-- [ ] Foto, especialidade e depoimento de Andreia Pereira, Lavínia Araújo e Luana
-- [ ] Especialidade do Ercivan Messias
+- [x] Fotos, especialidades, modalidades e depoimentos de Anna, Ivone, Camila, Thiago, Lua Clara, Ercivan, Vitória, Daniela, Luíza e Kelly (documento "PROFISSIONAIS PARA O SITE", atualizado em 04/10)
+- [ ] Depoimento da Kelly Roberta
+- [ ] Foto, especialidade e depoimento de Andreia Pereira, Lavínia Araújo e Lourdes Carine (cards ocultos até a foto chegar)
 - [ ] Validar as respostas do FAQ com a clínica
 - [x] Google Tag Manager, aviso de cookies e eventos no site
 - [ ] Política de privacidade: CNPJ, e-mail de contato e revisão jurídica
