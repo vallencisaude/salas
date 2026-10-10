@@ -216,9 +216,8 @@ Enquanto o vídeo não chega, o espaço mostra uma foto da recepção. Para ativ
 - [x] Domínio oficial `vallencisaude.com.br/salas` com HTTPS
 - [ ] Novas fotos da clínica (seção Nossa Estrutura)
 - [ ] Vídeo vertical de apresentação da clínica (seção Nossa Estrutura)
-- [x] Fotos, especialidades, modalidades e depoimentos de Anna, Ivone, Camila, Thiago, Lua Clara, Ercivan, Vitória, Daniela e Luíza (documento "PROFISSIONAIS PARA O SITE", atualizado em 04/10)
-- [ ] Depoimento da Kelly Roberta (card oculto até o depoimento chegar; foto, especialidade e selo já prontos)
-- [ ] Foto, especialidade e depoimento de Andreia Pereira, Lavínia Araújo e Lourdes Carine (cards ocultos até a foto chegar)
+- [x] Fotos, especialidades, modalidades e depoimentos de Anna, Ivone, Camila, Thiago, Lua Clara, Ercivan, Vitória, Daniela, Luíza, Kelly, Carine, Samara e Renata (documento "PROFISSIONAIS PARA O SITE", atualizado em 09/10)
+- [ ] Confirmar se Andreia Pereira e Lavínia Araújo continuam na clínica (cards ocultos; faltam foto, especialidade e depoimento)
 - [ ] Validar as respostas do FAQ com a clínica
 - [x] Google Tag Manager, aviso de cookies e eventos no site
 - [x] Política de privacidade: CNPJ (54.047.947/0001-87) e e-mail de contato (vallencisaude@gmail.com)
