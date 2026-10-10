@@ -221,7 +221,8 @@ Enquanto o vídeo não chega, o espaço mostra uma foto da recepção. Para ativ
 - [ ] Foto, especialidade e depoimento de Andreia Pereira, Lavínia Araújo e Lourdes Carine (cards ocultos até a foto chegar)
 - [ ] Validar as respostas do FAQ com a clínica
 - [x] Google Tag Manager, aviso de cookies e eventos no site
-- [ ] Política de privacidade: CNPJ, e-mail de contato e revisão jurídica
+- [x] Política de privacidade: CNPJ (54.047.947/0001-87) e e-mail de contato (vallencisaude@gmail.com)
+- [ ] Política de privacidade: revisão jurídica
 - [ ] Configuração do painel do GTM: GA4, Clarity, conversões do Google Ads, Meta e Tintim (IDs com o gestor de tráfego)
 
 ---
